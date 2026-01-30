@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
   await page.goto('https://github.com/login');
+  console.log("sdfs");
   await page.getByRole('textbox', { name: 'Username or email address' }).click();
   await page.getByRole('textbox', { name: 'Username or email address' }).fill('23445656abc');
   await page.getByRole('textbox', { name: 'Password' }).click();
